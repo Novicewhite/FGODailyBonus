@@ -65,18 +65,18 @@ def UpdateAppVer(detail):
 # ===== End =====
 
 # ===== Telegram arguments =====
-TelegramBotToken = ''
-TelegramAdminId = ''
+#TelegramBotToken = ''
+#TelegramAdminId = ''
 
 
-def SendMessageToAdmin(message):
-    if TelegramBotToken != 'nullvalue':
-        nowtime = mytime.GetFormattedNowTime()
-        url = f'https://api.telegram.org/bot{TelegramBotToken}/sendMessage?chat_id={TelegramAdminId}&parse_mode=markdown&text=_{nowtime}_\n{message}'
-        result = json.loads(requests.get(url, verify=False).text)
-        if not result['ok']:
-            print(result)
-            print(message)
+#def SendMessageToAdmin(message):
+    #if TelegramBotToken != 'nullvalue':
+        #nowtime = mytime.GetFormattedNowTime()
+        #url = f'https://api.telegram.org/bot{TelegramBotToken}/sendMessage?chat_id={TelegramAdminId}&parse_mode=markdown&text=_{nowtime}_\n{message}'
+        #result = json.loads(requests.get(url, verify=False).text)
+        #if not result['ok']:
+            #print(result)
+            #print(message)
 
 
 # ===== End =====
